@@ -29,7 +29,7 @@ $$A^{[l]} = g^{[l]}(Z^{[l]})$$
 
 * **Output layer ($l = L$):** Use **Softmax** to convert logits $Z^{[L]}$ into class probabilities:
   $$\hat{y}_{i,j} = \text{softmax}(z^{[L]})_{i,j} = \frac{e^{z^{[L]}_{i,j} - \max_k z^{[L]}_{k,j}}}{\sum_{k=1}^{10} e^{z^{[L]}_{k,j} - \max_k z^{[L]}_{k,j}}}$$
-  _(Subtracting $\max_k z_{k,j}$ improves numerical stability and prevents `NaN` values from exponential overflow.)_
+  _(Subtracting $\max_k z_{k,j}$ improves numerical stability and prevents `NaN` values from exponential overflow.)\_
 
 Loss Function (Categorical Cross-Entropy):
 
@@ -110,4 +110,6 @@ mlp.py
 ```
 
 - The code of the model. All the architecture and math functions used in the code.
-- All the metrics of the model is in the file `metrics.png`.
+- As i said before, i build this project to learn the concepts and theory, so i'm open to suggestions for improve the code.
+
+## I really hope you enjoy this code, thanks to read my project, cheers!
